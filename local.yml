@@ -11,5 +11,6 @@
         - tmux
   
   - name: Install Snap package of Spotify
-    community.general.snap:
+    snap:
       name: spotify
+      state: present
