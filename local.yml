@@ -10,6 +10,6 @@
         - htop
         - tmux
   
-          #- name: Install Snap package of Spotify
-          #community.general.snap:
-          #name: spotify
+  - name: Install Snap package of Spotify
+    community.general.snap:
+      name: spotify
