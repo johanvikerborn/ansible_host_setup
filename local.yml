@@ -6,4 +6,10 @@
   tasks:
   - name: Install htop
     package:
-      name: htop
+      name: 
+        - htop
+        - tmux
+  
+  - name: Install Snap package of Spotify
+    community.general.snap:
+      name: spotify
