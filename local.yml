@@ -9,6 +9,8 @@
       name: 
         - htop
         - tmux
+        - vim
+        - python3-psutil
   
   - name: Install Snap package of Spotify
     snap:
