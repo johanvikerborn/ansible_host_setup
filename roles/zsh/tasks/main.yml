@@ -9,7 +9,7 @@
 
 - name: Download zsh zip file
   get_url:
-    url: http:192.168.1.130/zsh.zip 
+    url: http:192.168.1.130/zsh.tgz 
     dest: /tmp/zsh.zip 
     owner: nash
     group: nash
