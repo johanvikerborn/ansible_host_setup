@@ -1,0 +1,20 @@
+---
+# tasks file for zsh
+
+- name: Install Zsh on computer
+  package: 
+    name: zsh
+    state: latest
+
+
+- name: Download zsh zip file
+  get_url:
+    url: http:192.168.1.130/zsh.zip 
+    dest: /tmp/zsh.zip 
+    owner: nash
+    group: nash
+
+- name: Untar zsh.tgz
+  unarchive:
+    src: /tmp/zsh.tgz
+    dest: /home/nash/
