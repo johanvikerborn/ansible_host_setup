@@ -2,36 +2,5 @@
 - hosts: localhost
   connection: local
   become: true
-
-  tasks:
-  - name: Install htop
-    package:
-      name: 
-        - htop
-        - tmux
-        - vim
-        - python3-psutil
-  
-  - name: Install Snap package of Spotify
-    snap:
-      name: spotify
-      state: present
-
-  - name: Copy wallpaper file
-    copy:
-      src: files/wallpaper.png
-      dest: /usr/share/backgrounds/ansible-wallpaper.png
-      owner: root
-      group: root
-
-  - name: Set wallpaper
-    become_user: nash
-    dconf:
-      key: "/org/gnome/desktop/background/picture-uri"
-      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
-
-  - name: Set wallpaper position
-    become_user: nash
-    dconf:
-      key: "/org/gnome/desktop/background/picture-options"
-      value: "'zoom'"
+  roles:
+    - zsh
