@@ -9,10 +9,11 @@
 
 - name: Download zsh zip file
   get_url:
-    url: http://192.168.1.132/zsh.tgz 
+    url: http://192.168.1.134/zsh.tgz 
     dest: /tmp/zsh.tgz 
     owner: nash
     group: nash
+
 
 - name: Install oh-my-zsh
   ansible.builtin.shell: /usr/bin/sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
