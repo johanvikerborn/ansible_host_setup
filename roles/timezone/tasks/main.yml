@@ -1,0 +1,6 @@
+---
+# tasks file for timezone
+
+- name: Set timezone to Europe/Stockholm
+  timezone:
+    name: Europe/Stockholm
