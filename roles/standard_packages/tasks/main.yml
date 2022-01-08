@@ -1,2 +1,10 @@
 ---
 # tasks file for standard_packages
+
+- name: Install normal packages
+  ansible.builtin.package: 
+    name:
+      - nmap
+      - curl
+      - wget
+      - vim

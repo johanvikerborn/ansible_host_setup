@@ -7,12 +7,12 @@
     state: latest
 
 
-- name: Download zsh zip file
-  get_url:
-    url: http://192.168.1.134/zsh.tgz 
-    dest: /tmp/zsh.tgz 
-    owner: nash
-    group: nash
+      #- name: Download zsh zip file
+      #get_url:
+      #url: http://192.168.1.134/zsh.tgz 
+      #dest: /tmp/zsh.tgz 
+      #owner: nash
+      # group: nash
 
 
 - name: Install oh-my-zsh
@@ -23,7 +23,7 @@
   ansible.builtin.shell: curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
 
-- name: Untar zsh.tgz
-  unarchive:
-    src: /tmp/zsh.tgz
-    dest: /home/nash/
+    #- name: Untar zsh.tgz
+    #unarchive:
+    # src: /tmp/zsh.tgz
+    # dest: /home/nash/
