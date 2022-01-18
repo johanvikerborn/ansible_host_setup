@@ -3,6 +3,6 @@
   remote_user: ansible                                                                                                                                                                                           
   become: yes                                                                                                                                                                                                    
   gather_facts: yes 
-    roles:
+  roles:
     - zsh
     - timezone
